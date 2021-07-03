@@ -1,0 +1,492 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+background-image: url(../img/fondoheader.png);
+background-size: cover;
+
+    display: grid;
+    grid-template-areas: 
+    "nav imagotipo"
+    "nav logotipo";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+
+    justify-items:  center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+#barraNavegacion {
+    grid-area: nav;   
+}
+
+#imagotipo {
+    grid-area: imagotipo;  
+}
+
+#logotipo {
+    grid-area: logotipo;
+}
+
+.header__imagotipo{
+transition-duration: 30s;
+padding: 15px 15px 15px 15px;
+}
+
+
+.header__imagotipo:hover {
+   transform: rotate(360deg);
+}
+
+.header__logotipo{
+    transition-duration: 3s;
+}
+
+.header__logotipo:hover{
+    transform: scale(1.3, 1.3);
+}
+
+.barraNavegacion > ul {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: 4.5;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.barraNavegacion > ul > li > a {
+    color: black;
+    font-weight: 500;
+}
+
+.barraNavegacion > ul > li > a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* TARJETAS NEGRAS */
+.tarjetasNegras {
+
+background-color: black;
+color: white;
+align-content: center;
+justify-content: center;
+padding: 30px;
+
+
+}
+                        /* TITULO TARJETAS NEGRAS */
+.tarjetasNegras > h1 {
+padding-top: 35px;
+align-items: center;
+font-size: 2rem;
+text-align: center;
+}
+
+                        /* TEXTO TARJETAS NEGRAS */
+.tarjetasNegras > p {
+text-align: center;
+margin: 50px 20% 50px 20%;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 1.8;
+justify-content: center;
+}
+
+                        /*  TAJETAS SOLO PARA INDEX */
+.tarjetasNegras__imagenes {
+display: flex;
+justify-content: space-around;
+margin-top: 25px;
+flex-wrap: wrap ;
+justify-content: space-around;
+
+}
+
+
+
+.tarjetasNegras__imagenes > img {
+    margin: 10px 10px 10px 10px;
+}
+.tarjetasNegras__imagenes > div{
+    text-align: center;
+}
+
+.tarjetasNegras__imagenes > div > h2{
+    padding: 25px 25px 25px 25px;
+}
+
+/* FOOTER */
+footer {
+
+color: white;
+background-image: url("../img/fondofooter.png");
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 15px 20px 15px;
+text-align: center;
+padding: 10px 30px 10px 30px;
+
+}
+
+.footerbotons {
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.footerbotons > a {
+margin-left: 20px;
+margin-right: 20px;
+transition-duration: 1s;
+}
+
+.footerbotons > a >img:hover{
+ transform: scale(1.2, 1.2);
+}
+
+footer > nav  {
+list-style-type: none;
+text-decoration: none;
+font-size: 1rem;
+font-weight: 500;
+margin-left: 15px;
+line-height: 1.5;
+
+}
+
+footer > nav > ul {
+list-style-type: none;
+text-decoration: none;
+color: white;
+
+}
+
+footer > nav > ul > li  {
+text-decoration: none;
+color: white;
+
+}
+
+footer > nav > ul > li > a {
+color: white;
+}
+
+footer > nav > ul > li > a:hover {
+text-decoration: underline;
+font-weight: bolder;
+}
+
+
+
+/* NUESTRO EQUIPO */
+
+
+/* VISTA PREVIA DE INTEGRANTES */
+
+.grillaVistaPrevia {
+    display: grid;
+    grid-template-areas: 
+    "lara facu guido"
+    "juan flor dani";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: auto;
+
+}
+
+#fotoLara{
+    grid-area: lara;
+}
+
+
+#fotoFacundo{
+    grid-area: facu;
+}
+
+
+#fotoGuido{
+    grid-area: guido;
+}
+
+
+#fotoJuan{
+    grid-area: juan;
+}
+
+
+#fotoFlorencia{
+    grid-area: flor;
+}
+
+
+#fotoDaniela{
+    grid-area: dani;
+}
+
+
+.fotoVistaPrevia{
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.fotoVistaPrevia:hover {
+    filter: none;
+    transform: scale(1.1, 1.1);
+}
+
+
+/* DESCRIPCION DE INTEGRANTES */
+
+.grillaIntegrantes{
+    display: grid;
+    grid-template-areas: 
+    "lara1 laraTexto laraTexto laraTexto"
+    "facuTexto facuTexto facuTexto facu1"
+    "guido1 guidoTexto guidoTexto guidoTexto"
+    "juanTexto juanTexto juanTexto juan1"
+    "flor1 florTexto florTexto florTexto"
+    "daniTexto daniTexto daniTexto dani1";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1AF94;
+}
+
+#lara {
+    grid-area: lara1;
+ 
+}
+
+#laraTexto{
+    grid-area: laraTexto;
+
+}
+
+#facundo{
+    grid-area: facu1;
+}
+
+#facundoTexto{
+    grid-area: facuTexto;
+}
+
+#guido{
+    grid-area: guido1;
+}
+
+#guidoTexto{
+    grid-area: guidoTexto;
+}
+
+#juan{
+    grid-area: juan1;
+}
+
+#juanTexto{
+    grid-area: juanTexto;
+}
+
+#florencia{
+    grid-area: flor1;
+}
+
+#florenciaTexto{
+    grid-area: florTexto;
+}
+
+#daniela{
+    grid-area: dani1;
+}
+
+#danielaTexto{
+    grid-area: daniTexto;
+}
+
+
+.textoIntegrante{
+    background-color: #D1AF94;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 90px 10px 90px;
+    font-size: 1.5rem;
+    
+
+}
+
+
+/* SERVICIOS */
+
+/* GRILLA DE SERVICIOS */
+
+#grillaServicios{
+    display: grid;
+    grid-template-areas: 
+    "facefoto facetexto facetexto facetexto"
+    "maquetadotexto maquetadotexto maquetadotexto maquetadofoto"
+    "googlefoto googletexto googletexto googletexto"
+    "communitytexto communitytexto communitytexto  communityfoto"
+    "desarrollofoto desarrollotexto desarrollotexto desarrollotexto"
+    "integraltexto integraltexto integraltexto  integralfoto"
+    ;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1AF94;
+}
+
+#face{
+    grid-area: facefoto;
+}
+
+#faceTexto{
+    grid-area: facetexto;
+}
+
+#maquetado{
+    grid-area: maquetadofoto;
+}
+
+#maquetadoTexto{
+    grid-area: maquetadotexto;
+}
+
+#google{
+    grid-area: googlefoto;
+}
+
+#googleTexto {
+    grid-area: googletexto;
+}
+
+#community{
+    grid-area: communityfoto;
+}
+
+#communityTexto{
+    grid-area: communitytexto;
+}
+
+#desarrollo{
+    grid-area: desarrollofoto;
+}
+
+#desarrolloTexto{
+    grid-area: desarrollotexto;
+}
+
+#integral{
+    grid-area: integralfoto;
+}
+
+#integralTexto{
+    grid-area: integraltexto;
+}
+
+.textoServicios{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+.galeriaDeTrabajos{
+    background-color: #D1AF94 ;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+    
+}
+
+.galeriaDeTrabajos > img{
+    filter: grayscale(100%);
+    width: auto;
+}
+.galeriaDeTrabajos > img:hover{
+    filter: none;
+}
+
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    background-color: #D1AF94;
+    padding: 15px 15px 15px 15px;
+  
+}
+
+.mapa{
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+    margin: 15px 15px 15px 15px;
+}
+
+
+
+.grillaDeContacto{
+    display: grid;
+    grid-template-areas: 
+    ". telefono . mail ."
+    "face . insta . linkedin";
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: auto auto;
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: #D1AF94;
+    padding: 20px 10px 20px 10px;
+
+}
+
+#telefono{
+    grid-area: telefono;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#mail{
+    grid-area: mail;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#facebook{
+    grid-area: face;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#instagram{
+    grid-area: insta;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+#linkedin{
+    grid-area: linkedin;
+    text-align: center;
+    font-weight: 700;
+
+}
